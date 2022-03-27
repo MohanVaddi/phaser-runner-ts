@@ -3,7 +3,6 @@ import TextureKeys from './../consts/Texturekeys';
 import SceneKeys from '../consts/SceneKeys';
 import AnimationKeys from '../consts/AnimationKeys';
 
-
 // This is also true of loaded assets like images and atlases.
 // Once they are loaded, they can be accessed by any Scene.
 
@@ -14,55 +13,46 @@ export default class Preloader extends Phaser.Scene {
 
     preload() {
         // * load background
-        this.load.image(
-            TextureKeys.Background,
-            '../../public/house/bg_repeat_340x640.png'
-        );
+        this.load.image(TextureKeys.Background, '/house/bg_repeat_340x640.png');
 
         // * load mouseHole
         this.load.image(
             TextureKeys.MouseHole,
-            '../../public/house/object_mousehole.png'
+            '../../house/object_mousehole.png'
         );
 
         // * load windows
-        this.load.image(
-            TextureKeys.Window1,
-            '../../public/house/object_window1.png'
-        );
-        this.load.image(
-            TextureKeys.Window2,
-            '../../public/house/object_window2.png'
-        );
+        this.load.image(TextureKeys.Window1, '../../house/object_window1.png');
+        this.load.image(TextureKeys.Window2, '../../house/object_window2.png');
 
         // * load bookcases
         this.load.image(
             TextureKeys.Bookcase1,
-            '../../public/house/object_bookcase1.png'
+            '../../house/object_bookcase1.png'
         );
         this.load.image(
             TextureKeys.Bookcase2,
-            '../../public/house/object_bookcase2.png'
+            '../../house/object_bookcase2.png'
         );
 
         // * load lasers
         this.load.image(
             TextureKeys.LaserEnd,
-            '../../public/house/object_laser_end.png'
+            '../../house/object_laser_end.png'
         );
         this.load.image(
             TextureKeys.LaserMiddle,
-            '../../public/house/object_laser.png'
+            '../../house/object_laser.png'
         );
 
         // * load coin image
-        this.load.image(TextureKeys.Coin, '../../public/house/object_coin.png');
+        this.load.image(TextureKeys.Coin, '../../house/object_coin.png');
 
         //* sprite sheets are loaded as atlas
         this.load.atlas(
             TextureKeys.RocketMouse,
-            '../../public/characters/rocket-mouse.png',
-            '../../public/characters/rocket-mouse.json'
+            '../../characters/rocket-mouse.png',
+            '../../characters/rocket-mouse.json'
         );
     }
     create() {
