@@ -15,47 +15,47 @@ export default class Preloader extends Phaser.Scene {
         // * load background
         this.load.image(
             TextureKeys.Background,
-            'assets/house/bg_repeat_340x640.png'
+            'public/house/bg_repeat_340x640.png'
         );
 
         // * load mouseHole
         this.load.image(
             TextureKeys.MouseHole,
-            'assets/house/object_mousehole.png'
+            'public/house/object_mousehole.png'
         );
 
         // * load windows
-        this.load.image(TextureKeys.Window1, 'assets/house/object_window1.png');
-        this.load.image(TextureKeys.Window2, 'assets/house/object_window2.png');
+        this.load.image(TextureKeys.Window1, 'public/house/object_window1.png');
+        this.load.image(TextureKeys.Window2, 'public/house/object_window2.png');
 
         // * load bookcases
         this.load.image(
             TextureKeys.Bookcase1,
-            'assets/house/object_bookcase1.png'
+            'public/house/object_bookcase1.png'
         );
         this.load.image(
             TextureKeys.Bookcase2,
-            'assets/house/object_bookcase2.png'
+            'public/house/object_bookcase2.png'
         );
 
         // * load lasers
         this.load.image(
             TextureKeys.LaserEnd,
-            'assets/house/object_laser_end.png'
+            'public/house/object_laser_end.png'
         );
         this.load.image(
             TextureKeys.LaserMiddle,
-            'assets/house/object_laser.png'
+            'public/house/object_laser.png'
         );
 
         // * load coin image
-        this.load.image(TextureKeys.Coin, 'assets/house/object_coin.png');
+        this.load.image(TextureKeys.Coin, 'public/house/object_coin.png');
 
         //* sprite sheets are loaded as atlas
         this.load.atlas(
             TextureKeys.RocketMouse,
-            'assets/characters/rocket-mouse.png',
-            'assets/characters/rocket-mouse.json'
+            'public/characters/rocket-mouse.png',
+            'public/characters/rocket-mouse.json'
         );
     }
     create() {
